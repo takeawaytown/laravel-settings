@@ -48,6 +48,29 @@ abstract class SettingStore
 	}
 
 	/**
+	 * Get a flattened array from the settings data.
+	 *
+	 * @param  array   $array   Optional array of settings values, with a fallback to all settings.
+	 * @param  string  $prefix  Optional prefix.
+	 *
+	 * @return array
+	 */
+	public function getRawData($array = null, $prefix = null)
+	{
+		$subject = isset($array) ? $array : \Setting::all();
+		$result = array();
+		foreach($subject as $key=>$value) {
+			if(is_array($value)) {
+				$result = $result + flatten($value, $prefix . $key . '.');
+			}
+			else {
+				$result[$prefix . $key] = $value;
+			}
+		}
+		return $result;
+	}
+
+	/**
 	 * Determine if a key exists in the settings data.
 	 *
 	 * @param  string  $key
