@@ -1,6 +1,6 @@
 {
     "name": "takeawaytown/laravel-settings",
-    "description": "Persistent settings in Laravel 5.",
+    "description": "Persistent settings in Laravel 5",
     "license": "MIT",
     "authors": [
         {
