@@ -36,7 +36,7 @@ class DatabaseTest extends AbstractFunctionalTest
 			unset($store);
 		}
 
-		return new \anlutro\LaravelSettings\DatabaseSettingStore(
+		return new \TakeawayTown\LaravelSettings\DatabaseSettingStore(
 			$this->capsule->getConnection()
 		);
 	}

@@ -1,7 +1,7 @@
 <?php
 
-use anlutro\LaravelSettings\JsonSettingStore;
-use anlutro\LaravelSettings\DatabaseSettingStore;
+use TakeawayTown\LaravelSettings\JsonSettingStore;
+use TakeawayTown\LaravelSettings\DatabaseSettingStore;
 
 abstract class AbstractFunctionalTest extends PHPUnit_Framework_TestCase
 {
@@ -62,7 +62,7 @@ abstract class AbstractFunctionalTest extends PHPUnit_Framework_TestCase
 		$store->set('foo', 'bar');
 		$store->set('bar', 'baz');
 		$this->assertStoreEquals($store, array('foo' => 'bar', 'bar' => 'baz'));
-		
+
 		$store->forget('foo');
 		$this->assertStoreEquals($store, array('bar' => 'baz'));
 	}
@@ -83,7 +83,7 @@ abstract class AbstractFunctionalTest extends PHPUnit_Framework_TestCase
 				'foo' => 'baz',
 			),
 		));
-		
+
 		$store->forget('foo.bar');
 		$this->assertStoreEquals($store, array(
 			'foo' => array(

@@ -1,6 +1,6 @@
 <?php
 
-use anlutro\LaravelSettings\ArrayUtil;
+use TakeawayTown\LaravelSettings\ArrayUtil;
 
 class ArrayUtilTest extends PHPUnit_Framework_TestCase
 {

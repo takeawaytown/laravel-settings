@@ -16,6 +16,6 @@ class MemoryTest extends AbstractFunctionalTest
 
 	protected function createStore(array $data = null)
 	{
-		return new \anlutro\LaravelSettings\MemorySettingStore($data);
+		return new \TakeawayTown\LaravelSettings\MemorySettingStore($data);
 	}
 }

@@ -69,7 +69,7 @@ class DatabaseSettingStoreTest extends PHPUnit_Framework_TestCase
 		$query->shouldReceive('insert')->once()->with(array(
 			array('key' => 'foo', 'value' => 'bar', 'extracol' => 'extradata'),
 		));
-		
+
 		$store = $this->makeStore($connection);
 		$store->setExtraColumns(array('extracol' => 'extradata'));
 		$store->set('foo', 'bar');
@@ -101,6 +101,6 @@ class DatabaseSettingStoreTest extends PHPUnit_Framework_TestCase
 
 	protected function makeStore($connection)
 	{
-		return new anlutro\LaravelSettings\DatabaseSettingStore($connection);
+		return new TakeawayTown\LaravelSettings\DatabaseSettingStore($connection);
 	}
 }
