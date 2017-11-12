@@ -3,9 +3,9 @@
 [![Total Downloads](https://poser.pugx.org/takeawaytown/laravel-settings/downloads.svg)](https://packagist.org/packages/takeawaytown/laravel-settings)
 [![License](https://poser.pugx.org/takeawaytown/laravel-settings/license.svg)](https://packagist.org/packages/takeawaytown/laravel-settings)
 
-# Laravel-Settings
+# Laravel Settings
 
-Laravel 5.x.x persistent settings using Database and/or JSON
+Laravel 5.x persistent settings using Database and/or JSON
 
 # Install process
 
