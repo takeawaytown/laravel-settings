@@ -1,6 +1,6 @@
 {
     "name": "takeawaytown/laravel-settings",
-    "description": "Persistent settings in Laravel 5",
+    "description": "A package that allows saving persistent settings to either JSON or database in Laravel 5",
     "license": "MIT",
     "authors": [
         {
@@ -13,8 +13,8 @@
         "illuminate/support": ">=4.1 <6.0"
     },
     "suggest": {
-        "illuminate/filesystem": "Save settings to a JSON file.",
-        "illuminate/database": "Save settings to a database table."
+        "illuminate/filesystem": "Allows you to save settings to a JSON file.",
+        "illuminate/database": "Allows you to save settings to a database table."
     },
     "require-dev": {
         "phpunit/phpunit": ">=4.8, <6",
