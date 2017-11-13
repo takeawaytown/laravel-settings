@@ -2,6 +2,7 @@
     "name": "takeawaytown/laravel-settings",
     "description": "A package that allows saving persistent settings to either JSON or database in Laravel 5",
     "license": "MIT",
+    "keywords": ["laravel", "settings", "persistent"],
     "authors": [
         {
             "name": "Alex Scott",
